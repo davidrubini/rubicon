@@ -9,19 +9,18 @@ export function Footer() {
         {/* Top Section: Brand Statement & Tagline */}
         <div className="border-b border-obsidian-light pb-10 mb-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 space-y-3">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-ruby flex items-center justify-center text-white font-extrabold text-sm tracking-tight border border-ruby-border">
-                R<span className="font-black text-xs">²</span>
-              </div>
-              <span className="text-xl font-black tracking-tight text-white">
-                RUBICON LEAP <span className="text-slate-400 font-light">ADVISORY</span>
-              </span>
-            </div>
-            <p className="text-xs uppercase tracking-widest text-ruby font-bold">
-              Strategic Product Management & Fractional CPO Practice
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-dark.svg"
+              alt="Rubicon Leap Advisory"
+              className="h-10 sm:h-11 w-auto object-contain"
+            />
+            <p className="text-xs uppercase tracking-widest text-red-400 font-bold">
+              Strategic Product Management
             </p>
             <p className="text-base sm:text-lg text-slate-200 font-medium italic pt-2 max-w-xl leading-relaxed">
-              &ldquo;Strategy without execution is hallucination. Execution without strategy is chaos.&rdquo;
+              <span className="block">Strategy without execution is hallucination.</span>
+              <span className="block">Execution without strategy is chaos.</span>
             </p>
           </div>
 
@@ -53,7 +52,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services#diagnostic" className="hover:text-white transition-colors">
-                  2-Week Roadmap Diagnostic
+                  1-Week Roadmap Diagnostic
                 </Link>
               </li>
               <li>
@@ -106,11 +105,6 @@ export function Footer() {
               <li>
                 <Link href="/about#experience" className="hover:text-white transition-colors">
                   Career Milestones
-                </Link>
-              </li>
-              <li>
-                <Link href="/about#credentials" className="hover:text-white transition-colors">
-                  Tufts & Columbia Credentials
                 </Link>
               </li>
             </ul>

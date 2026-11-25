@@ -2,20 +2,21 @@ import React from "react";
 import Link from "next/link";
 import {
   Compass,
-  GraduationCap,
   Award,
   Building2,
   Globe,
   ArrowRight,
   ArrowUpRight,
-  BookOpen,
 } from "lucide-react";
 import { Accordion, AccordionItem } from "@/components/Accordion";
 
 export const metadata = {
   title: "About Dave Rubini | AI-Enlightened, Human-Centered Product Leader",
   description:
-    "Player-Coach product leader with 20+ years scaling digital ecosystems. Columbia MBA, Tufts Human Factors, Home Depot, Brickstream, Intuit, and Atlanta Tech Village Advisor.",
+    "Player-Coach product leader with 20+ years scaling digital ecosystems. Home Depot, Brickstream, Intuit, and Atlanta Tech Village Advisor.",
+  alternates: {
+    canonical: "https://leaptherubicon.com/about",
+  },
 };
 
 const careerAccordionItems: AccordionItem[] = [
@@ -29,7 +30,7 @@ const careerAccordionItems: AccordionItem[] = [
       <div className="space-y-3 pt-2 text-sm text-slate-700 leading-relaxed">
         <ul className="space-y-2 list-disc list-outside pl-4 text-xs sm:text-sm">
           <li>
-            Directly managed 6 product managers and cross-functional balanced Agile squads across Home Décor, Bath,
+            Directly managed 6 product managers and balanced Agile cross-functional teams across Home Décor, Bath,
             Flooring, Appliances, and enterprise SEO.
           </li>
           <li>
@@ -130,7 +131,7 @@ export default function AboutPage() {
             Dave Rubini — AI-Enlightened, Human-Centered Product Leader
           </h1>
           <p className="text-base sm:text-xl text-slate-600 leading-relaxed font-medium">
-            Bridging executive boardroom strategy with hands-on squad delivery across physical and digital ecosystems.
+            Bridging executive boardroom strategy with hands-on cross-functional team delivery across physical and digital ecosystems.
           </p>
         </div>
       </section>
@@ -148,7 +149,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 I am a product management leader and advisor with 20+ years of experience scaling physical and digital
-                commerce ecosystems. I bridge executive boardroom strategy with hands-on squad delivery—equally
+                commerce ecosystems. I bridge executive boardroom strategy with hands-on cross-functional team delivery—equally
                 comfortable presenting to board directors and debugging user stories with engineers.
               </p>
             </div>
@@ -163,9 +164,8 @@ export default function AboutPage() {
               </p>
               <p>
                 My philosophy of <strong className="text-obsidian">&ldquo;Grounded Ambition&rdquo;</strong> balances an
-                expansive strategic horizon (Columbia MBA, $300M retail media, ambient commerce) with solid operational
-                grounding (Tufts Human Factors Engineering, cognitive ergonomics, behavioral telemetry, and Agile
-                delivery).
+                expansive strategic horizon ($300M retail media, ambient commerce) with solid operational grounding
+                (cognitive ergonomics, behavioral telemetry, and Agile delivery).
               </p>
             </div>
 
@@ -173,8 +173,8 @@ export default function AboutPage() {
               <Globe className="w-5 h-5 text-ruby shrink-0 mt-0.5" />
               <div>
                 <strong className="text-obsidian block mb-0.5">Operating Footprint: Virtual-First &amp; Globally Flexible</strong>
-                Rubicon Leap Advisory operates as a modern distributed practice, partnering seamlessly with product
-                squads and executive leadership teams across client time zones.
+                Rubicon Leap Advisory operates as a modern distributed practice, partnering seamlessly with
+                cross-functional teams and executive leadership teams across client time zones.
               </div>
             </div>
           </div>
@@ -183,32 +183,10 @@ export default function AboutPage() {
           <div className="lg:col-span-5 space-y-4">
             <div className="bg-white border-2 border-surface-border rounded-xl p-6 shadow-2xs space-y-5">
               <h3 className="text-sm font-black uppercase tracking-wider text-obsidian border-b border-slate-100 pb-3">
-                Education &amp; Community Credentials
+                Community &amp; Advisory Credentials
               </h3>
 
               <div className="space-y-4 text-xs sm:text-sm">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded bg-ruby-light text-ruby shrink-0 mt-0.5">
-                    <GraduationCap className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-obsidian">Columbia Business School</h4>
-                    <p className="text-slate-600">MBA in Marketing &amp; Management of Innovation</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded bg-ruby-light text-ruby shrink-0 mt-0.5">
-                    <BookOpen className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-obsidian">Tufts University</h4>
-                    <p className="text-slate-600">
-                      BS in Engineering Psychology / Human Factors Engineering (<em>magna cum laude</em>)
-                    </p>
-                  </div>
-                </div>
-
                 <div className="flex items-start gap-3">
                   <div className="p-2 rounded bg-obsidian text-white shrink-0 mt-0.5">
                     <Building2 className="w-4 h-4" />
@@ -278,7 +256,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Whether you are navigating an executive product inflection, preparing for your next funding round, or need an
-            embedded leader to unblock squad delivery.
+            embedded leader to unblock cross-functional team delivery.
           </p>
           <div className="pt-2">
             <Link

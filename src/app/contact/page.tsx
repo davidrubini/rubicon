@@ -22,7 +22,10 @@ function LinkedInIcon({ className }: { className?: string }) {
 export const metadata = {
   title: "Contact & Booking | Schedule a 30-Minute Roadmap Diagnostic",
   description:
-    "Connect directly with Dave Rubini at Rubicon Leap Advisory. Schedule a 30-minute diagnostic call, call 404-386-5722, or email drubini@gmail.com.",
+    "Connect directly with Dave Rubini at Rubicon Leap Advisory. Schedule a 30-minute diagnostic call, call 404-386-5722, or email dave@leaptherubicon.com.",
+  alternates: {
+    canonical: "https://leaptherubicon.com/contact",
+  },
 };
 
 export default function ContactPage() {
@@ -30,18 +33,18 @@ export default function ContactPage() {
     <div className="space-y-16 sm:space-y-20 py-8 sm:py-12">
       {/* 1. Header */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl space-y-4">
+        <div className="max-w-5xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-ruby">
             <Compass className="w-4 h-4" />
             <span>Direct Principal Access</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-obsidian tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-obsidian tracking-tight leading-tight lg:whitespace-nowrap">
             Are You Ready to Cross the Rubicon?
           </h1>
           <p className="text-base sm:text-xl text-slate-600 leading-relaxed font-medium">
-            Stop standing on the riverbank of product indecision. Whether you need an embedded Fractional CPO to unblock
-            your roadmap, an advisory retainer to stress-test your product bets, or a 2-Week Roadmap Diagnostic to get
-            your squads aligned, let&apos;s connect.
+            Stop standing on the riverbank. Take the Leap. Whether you need an embedded Fractional CPO to unblock
+            your roadmap, an advisory retainer to stress-test your product bets, or a 1-Week Roadmap Diagnostic to get
+            your cross-functional teams aligned, let&apos;s connect.
           </p>
         </div>
       </section>
@@ -81,7 +84,7 @@ export default function ContactPage() {
 
             {/* Direct Email */}
             <a
-              href="mailto:drubini@gmail.com"
+              href="mailto:dave@leaptherubicon.com"
               className="block bg-white border border-surface-border rounded-xl p-5 hover:border-ruby shadow-2xs transition-all group"
             >
               <div className="flex items-center justify-between">
@@ -94,15 +97,14 @@ export default function ContactPage() {
                       Direct Principal Email
                     </span>
                     <span className="text-base font-bold text-obsidian group-hover:text-ruby transition-colors">
-                      drubini@gmail.com
+                      dave@leaptherubicon.com
                     </span>
                   </div>
                 </div>
                 <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-ruby transition-colors" />
               </div>
               <p className="text-xs text-slate-500 mt-2.5 pt-2.5 border-t border-slate-100">
-                Domain alias: <code className="text-slate-700">dave@leaptherubicon.com</code>. Replies typically within 24
-                hours.
+                Direct email to Dave Rubini. Replies typically within 24 hours.
               </p>
             </a>
 
@@ -139,7 +141,7 @@ export default function ContactPage() {
               <Globe className="w-5 h-5 text-ruby shrink-0 mt-0.5" />
               <div className="text-xs text-slate-600 leading-relaxed">
                 <strong className="text-obsidian block mb-0.5">Practice Availability:</strong>
-                Partnering remotely and friction-free with technology ventures and product squads worldwide.
+                Partnering remotely and friction-free with technology ventures and cross-functional teams worldwide.
               </div>
             </div>
           </div>
@@ -209,7 +211,7 @@ export default function ContactPage() {
                 <span className="font-bold text-obsidian block">How to Prepare:</span>
                 <p>
                   Bring 1 or 2 specific challenges currently facing your team: a contentious roadmap priority, an
-                  upcoming board presentation, or squad delivery friction. We will dissect the problem collaboratively.
+                  upcoming board presentation, or cross-functional team delivery friction. We will dissect the problem collaboratively.
                 </p>
               </div>
             </div>

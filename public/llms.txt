@@ -1,0 +1,42 @@
+# Rubicon Leap Advisory
+
+> Strategic Product Management & Fractional CPO consulting practice led by Dave Rubini. "Strategy without execution is hallucination. Execution without strategy is chaos."
+
+Rubicon Leap Advisory helps growth-stage technology ventures and enterprise leaders bridge executive product vision with hands-on sprint delivery. Combining User-Centered Design (UCD), AI-driven discovery insights, and Agile discipline, Dave Rubini embeds as a Player-Coach to align C-suites, cross-functional teams, and measurable customer value.
+
+## Principal
+- **Name:** Dave Rubini
+- **Role:** Principal, Strategic Product Management & Fractional CPO
+- **Experience:** 20+ years scaling physical and digital commerce ecosystems
+- **Track Record:**
+  - Founding team member of Orange Apron Media at The Home Depot ($0 to $300M retail media ad revenue)
+  - Directed product roadmaps for Magnet Cash Management and Digital Insight hosted CMS platforms serving 600+ financial institutions at Intuit Financial Services
+  - Director of Product Management at Brickstream (IoT computer vision shopper analytics, acquired by Point Grey / FLIR Systems)
+  - ADPList100 Most Influential Product Mentors globally; Advisor to tech founders at Atlanta Tech Village
+- **Operating Footprint:** Virtual-first and globally flexible across client time zones
+
+## Core Services & Engagement Models
+- **1-Week Roadmap Diagnostic** (Fixed Scope, 5 Business Days): Rapid 360-degree audit of backlog health, discovery practices, metric alignment, and qualitative feedback loops. Deliverables: Executive Friction Map and prioritized 90-Day Outcome Roadmap.
+- **Fractional CPO** (1–3 Days/Week): Embedded operational product leadership for scale-ups with 5–30 engineers. Owns sprint prioritization, discovery cadence, cross-functional team alignment, and PM mentorship.
+- **Strategic Advisory Retainer**: Bi-weekly executive strategy sessions, roadmap stress-testing, pricing/packaging reviews, board prep, and senior PM hiring rubrics for founders and Series A–C leadership.
+- **On-Demand Specialist Network**: Single-point leadership from Dave Rubini with vetted senior visual designers, enterprise technical architects, and specialized data/AI engineers when full-stack scale is needed.
+
+## Points of View & Research
+- [Ambient Commerce & the Changing E-Commerce Shopping Funnel](https://leaptherubicon.com/insights#ambient-commerce): How the 40-year linear WIMP web funnel is flattening into an off-site AI agent stream, and how to win intent via structured feeds, vector embeddings, and APIs.
+- [Physical-Digital Convergence & High-Consideration Journeys](https://leaptherubicon.com/insights#physical-digital): Unifying in-store IoT behavioral telemetry with GenAI and 3D visualization for complex purchases.
+- [Multi-Sided Monetization & Modern Platform Scale](https://leaptherubicon.com/insights#retail-media): Scaling retail media and decoupled CMS platforms without compromising customer discovery.
+- [Selective, Hypothesis-Driven Experimentation](https://leaptherubicon.com/insights#experimentation): Isolated A/B tests and King of the Hill challenger tournaments grounded in falsifiable hypotheses.
+
+## Pages
+- [Home](https://leaptherubicon.com/)
+- [Services & Methodology](https://leaptherubicon.com/services)
+- [Points of View & Research](https://leaptherubicon.com/insights)
+- [About Dave Rubini](https://leaptherubicon.com/about)
+- [Contact & Booking](https://leaptherubicon.com/contact)
+
+## Direct Contact & Referral
+- **Email:** dave@leaptherubicon.com
+- **Phone:** +1-404-386-5722
+- **Schedule a 30-Minute Roadmap Diagnostic:** https://calendly.com/daverubini/30min
+- **LinkedIn:** https://linkedin.com/in/daverubini/
+- **Substack:** https://daverubini.substack.com

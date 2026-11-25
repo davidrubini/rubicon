@@ -18,7 +18,10 @@ import { Accordion, AccordionItem } from "@/components/Accordion";
 export const metadata = {
   title: "Services & Methodology",
   description:
-    "Product Leadership on Demand: From Boardroom Strategy to Daily Sprints. Fractional CPO, Strategic Advisory, and 2-Week Roadmap Diagnostics by Dave Rubini.",
+    "Product Leadership on Demand: From Boardroom Strategy to Daily Sprints. Fractional CPO, Strategic Advisory, and 1-Week Roadmap Diagnostics by Dave Rubini.",
+  alternates: {
+    canonical: "https://leaptherubicon.com/services",
+  },
 };
 
 const pillars = [
@@ -27,7 +30,7 @@ const pillars = [
     title: "Iterative Discovery",
     icon: Search,
     description:
-      "I pair qualitative user research with quantitative telemetry to ensure squads solve verified customer problems, not internal assumptions.",
+      "I pair qualitative user research with quantitative telemetry to ensure cross-functional teams solve verified customer problems, not internal assumptions.",
     takeaway: "Eliminate wasteful rework before writing a single line of production code.",
   },
   {
@@ -115,7 +118,7 @@ const engagementAccordionItems: AccordionItem[] = [
       <div className="space-y-4 pt-2">
         <p className="text-sm text-slate-700 leading-relaxed">
           Embedded operational leadership. I step in as your interim or fractional Chief Product Officer to own sprint
-          prioritization, institute discovery cadence, align cross-functional squads, and elevate product culture.
+          prioritization, institute discovery cadence, align cross-functional teams, and elevate product culture.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
           <div className="bg-surface-subtle p-3 rounded-lg border border-surface-border">
@@ -130,7 +133,7 @@ const engagementAccordionItems: AccordionItem[] = [
             <strong className="text-obsidian block mb-1">Key Deliverables:</strong>
             <ul className="space-y-1 text-slate-600">
               <li>• Rolling 90-Day Outcome Roadmaps</li>
-              <li>• Autonomous, high-velocity product squads</li>
+              <li>• Autonomous, high-velocity cross-functional teams</li>
               <li>• Standardized discovery &amp; telemetry playbooks</li>
             </ul>
           </div>
@@ -162,7 +165,7 @@ const engagementAccordionItems: AccordionItem[] = [
           <div className="bg-surface-subtle p-3 rounded-lg border border-surface-border">
             <strong className="text-obsidian block mb-1">Sprint Formats:</strong>
             <ul className="space-y-1 text-slate-600">
-              <li>• 2-Week Roadmap Diagnostic</li>
+              <li>• 1-Week Roadmap Diagnostic</li>
               <li>• User-Centered Design (UCD) Workflow Overhaul</li>
               <li>• GTM &amp; Multi-Sided Monetization Architecture</li>
             </ul>
@@ -172,7 +175,7 @@ const engagementAccordionItems: AccordionItem[] = [
             <ul className="space-y-1 text-slate-600">
               <li>• Comprehensive executive audit report</li>
               <li>• Actionable backlog reconstruction</li>
-              <li>• Squad telemetry &amp; KPI dashboard setup</li>
+              <li>• Cross-functional team telemetry &amp; KPI dashboard setup</li>
             </ul>
           </div>
         </div>
@@ -190,9 +193,44 @@ const engagementAccordionItems: AccordionItem[] = [
   },
 ];
 
+const servicesFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the 1-Week Roadmap Diagnostic at Rubicon Leap Advisory?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The 1-Week Roadmap Diagnostic is a fixed-scope 5-business-day operational audit led by Dave Rubini. It delivers an Executive Friction Map identifying organizational bottlenecks and backlog bloat, plus a prioritized 90-Day Outcome Roadmap aligning executive goals with sprint velocity.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who should hire Dave Rubini as a Fractional CPO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Growth-stage scale-ups with 5 to 30 engineers and Series A–C leadership teams that need embedded 1–3 days/week product leadership to own sprint prioritization, institute discovery cadence, align cross-functional teams, and mentor product managers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can I contact or refer someone to Rubicon Leap Advisory?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Email Dave Rubini directly at dave@leaptherubicon.com, call 404-386-5722, or schedule a 30-minute roadmap diagnostic at https://leaptherubicon.com/contact.",
+      },
+    },
+  ],
+};
+
 export default function ServicesPage() {
   return (
     <div className="space-y-16 sm:space-y-24 py-8 sm:py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }}
+      />
       {/* 1. Header & Core Philosophy */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl space-y-4">
@@ -267,7 +305,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 3. Signature Engagement: The 2-Week Roadmap Diagnostic */}
+      {/* 3. Signature Engagement: The 1-Week Roadmap Diagnostic */}
       <section id="diagnostic" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-obsidian text-white border-2 border-ruby rounded-2xl p-6 sm:p-10 lg:p-12 relative overflow-hidden shadow-xl">
           <div className="absolute top-0 right-0 w-80 h-80 bg-ruby/10 rounded-bl-full pointer-events-none" />
@@ -279,7 +317,7 @@ export default function ServicesPage() {
             </span>
 
             <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-              The 2-Week Roadmap Diagnostic
+              The 1-Week Roadmap Diagnostic
             </h2>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
@@ -315,11 +353,11 @@ export default function ServicesPage() {
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-ruby hover:bg-ruby-hover text-white text-sm font-bold rounded-lg shadow-sm transition-colors min-h-[44px]"
               >
-                <span>Schedule Your 2-Week Roadmap Diagnostic</span>
+                <span>Schedule Your 1-Week Roadmap Diagnostic</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <span className="text-xs text-slate-400">
-                Turnaround: 10 business days with executive debrief.
+                Turnaround: 5 business days with executive debrief.
               </span>
             </div>
           </div>
@@ -338,7 +376,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               Whether you need strategic counsel for your executive team or embedded operational leadership for your
-              squads.
+              cross-functional teams.
             </p>
           </div>
 
@@ -411,7 +449,7 @@ export default function ServicesPage() {
             Ready to Unblock Your Product Organization?
           </h2>
           <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Let&apos;s schedule a 30-minute discovery conversation to assess your roadmap, squad alignment, and immediate
+            Let&apos;s schedule a 30-minute discovery conversation to assess your roadmap, cross-functional team alignment, and immediate
             growth priorities.
           </p>
           <div className="pt-2">

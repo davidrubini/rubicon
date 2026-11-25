@@ -14,6 +14,9 @@ export const metadata = {
   title: "Points of View on Digital Ecosystems & Product Craft",
   description:
     "Pragmatic, research-backed perspectives on ambient commerce, physical-digital convergence, platform monetization, and selective experimentation by Dave Rubini.",
+  alternates: {
+    canonical: "https://leaptherubicon.com/insights",
+  },
 };
 
 export default function InsightsPage() {

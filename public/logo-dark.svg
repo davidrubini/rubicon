@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 76" fill="none" role="img" aria-label="Rubicon Leap Advisory">
+  <!-- Vertical Ruby Accent Bar -->
+  <rect x="4" y="6" width="8" height="64" fill="#B91C1C" />
+
+  <!-- RUBICON LEAP Wordmark -->
+  <text
+    x="24"
+    y="44"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    font-weight="800"
+    font-size="42"
+    letter-spacing="0.5"
+  >
+    <tspan fill="#FFFFFF">RUBICON</tspan><tspan fill="#B91C1C">LEAP</tspan>
+  </text>
+
+  <!-- ADVISORY Subtitle -->
+  <text
+    x="26"
+    y="68"
+    fill="#F8FAFC"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    font-weight="600"
+    font-size="18"
+    letter-spacing="11"
+  >
+    ADVISORY
+  </text>
+</svg>

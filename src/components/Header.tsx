@@ -29,7 +29,7 @@ export function Header() {
   const navLinks = [
     { href: "/services", label: "Services & Methodology" },
     { href: "/insights", label: "Points of View" },
-    { href: "/about", label: "About Dave" },
+    { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -39,28 +39,21 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-40 h-16 w-full bg-white/95 backdrop-blur-md border-b border-surface-border">
+    <>
+      <header className="sticky top-0 z-40 h-16 w-full bg-white/95 backdrop-blur-md border-b border-surface-border">
       <div className="max-w-6xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Left: Brand Wordmark */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-ruby rounded-md py-1"
+          className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-ruby rounded-md py-1 shrink-0"
           aria-label="Rubicon Leap Advisory Home"
         >
-          <div className="w-8 h-8 rounded-lg bg-obsidian flex items-center justify-center text-white font-extrabold text-sm tracking-tight border border-obsidian-light shadow-2xs group-hover:bg-obsidian-light transition-colors">
-            R<span className="text-ruby font-black text-xs">²</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-base sm:text-lg font-black tracking-tight text-obsidian flex items-center gap-1.5 leading-tight">
-              RUBICON LEAP
-            </span>
-            <div className="flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-ruby inline-block"></span>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase leading-none">
-                ADVISORY
-              </span>
-            </div>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt="Rubicon Leap Advisory"
+            className="h-8 sm:h-10 w-auto object-contain"
+          />
         </Link>
 
         {/* Center: Desktop Navigation */}
@@ -84,13 +77,13 @@ export function Header() {
         </nav>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2 sm:gap-2.5">
           <Link
             href="/contact"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-ruby hover:bg-ruby-hover text-white text-sm font-semibold rounded-md shadow-2xs transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-ruby-border cursor-pointer min-h-[44px]"
+            className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 bg-ruby hover:bg-ruby-hover text-white text-xs sm:text-sm font-semibold rounded-md shadow-2xs transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-ruby-border cursor-pointer min-h-[44px] whitespace-nowrap"
           >
             <span>Let&apos;s Talk</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </Link>
 
           {/* Mobile Drawer Trigger (Minimum 44x44px touch target) */}
@@ -105,6 +98,7 @@ export function Header() {
           </button>
         </div>
       </div>
+      </header>
 
       {/* Mobile Drawer Overlay */}
       {isDrawerOpen && (
@@ -119,12 +113,12 @@ export function Header() {
           <div className="fixed top-0 right-0 bottom-0 w-full max-w-xs bg-white shadow-2xl flex flex-col z-50 animate-in slide-in-from-right duration-200">
             {/* Drawer Header */}
             <div className="h-16 px-5 border-b border-surface-border flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded bg-obsidian flex items-center justify-center text-white font-extrabold text-xs">
-                  R<span className="text-ruby text-[10px]">²</span>
-                </div>
-                <span className="font-extrabold text-sm text-obsidian">RUBICON LEAP</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo.svg"
+                alt="Rubicon Leap Advisory"
+                className="h-8 w-auto object-contain"
+              />
               <button
                 type="button"
                 onClick={() => setIsDrawerOpen(false)}
@@ -175,11 +169,11 @@ export function Header() {
                     <span>404-386-5722</span>
                   </a>
                   <a
-                    href="mailto:drubini@gmail.com"
+                    href="mailto:dave@leaptherubicon.com"
                     className="flex items-center gap-2 text-slate-600 hover:text-ruby py-1 font-medium min-h-[44px]"
                   >
                     <Mail className="w-4 h-4 text-ruby shrink-0" />
-                    <span>drubini@gmail.com</span>
+                    <span>dave@leaptherubicon.com</span>
                   </a>
                 </div>
               </div>
@@ -188,12 +182,12 @@ export function Header() {
             {/* Drawer Footer Tagline */}
             <div className="p-5 border-t border-slate-100 bg-surface-subtle">
               <p className="text-[11px] text-slate-500 italic leading-relaxed">
-                &ldquo;Strategy without execution is hallucination. Execution without strategy is chaos.&rdquo;
+                Strategy without execution is hallucination. Execution without strategy is chaos.
               </p>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

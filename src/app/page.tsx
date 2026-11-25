@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="space-y-16 sm:space-y-24 py-8 sm:py-12">
       {/* 1. Hero Section (Above the Fold) */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl space-y-6">
+        <div className="w-full space-y-6">
           {/* Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-ruby/30 bg-ruby-light/60 text-ruby text-xs font-black uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-ruby animate-pulse" />
@@ -16,9 +16,13 @@ export default function HomePage() {
           </div>
 
           {/* Headline H1 */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-obsidian tracking-tight leading-[1.1]">
-            Strategy Without Execution Is Hallucination.{" "}
-            <span className="text-ruby">Execution Without Strategy Is Chaos.</span>
+          <h1 className="text-[clamp(14px,3.85vw,45px)] font-black text-obsidian tracking-tight leading-[1.15]">
+            <span className="block whitespace-nowrap">
+              Strategy Without Execution Is Hallucination.
+            </span>
+            <span className="block whitespace-nowrap">
+              Execution Without Strategy Is Chaos.
+            </span>
           </h1>
 
           {/* Subheadline */}
@@ -78,7 +82,7 @@ export default function HomePage() {
               <p className="text-sm text-slate-600 leading-relaxed">
                 Most product organizations get trapped between two extremes: pure strategy that never ships, or pure
                 execution that ships the wrong things. Strategy without execution produces elegant slide decks that
-                gather dust. Execution without strategy produces &ldquo;feature factories&rdquo;—squads burning through
+                gather dust. Execution without strategy produces &ldquo;feature factories&rdquo;—cross-functional teams burning through
                 story points on time, but missing revenue, retention, and strategic differentiation.
               </p>
             </div>
@@ -109,7 +113,7 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 A decisive shift: rigorous qualitative discovery upfront, disciplined hypothesis testing in the
-                middle, and autonomous sprint execution at the finish line. I bridge your boardroom horizon with squad
+                middle, and autonomous sprint execution at the finish line. I bridge your boardroom horizon with cross-functional team
                 telemetry so product managers lead with verified conviction.
               </p>
             </div>
@@ -129,7 +133,7 @@ export default function HomePage() {
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-              &ldquo;Alea Iacta Est&rdquo; — The Die Is Cast.
+              <em className="italic">&ldquo;Alea Iacta Est&rdquo;</em> — The Die Is Cast.
             </h2>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
@@ -176,7 +180,7 @@ export default function HomePage() {
             </h2>
             <p className="text-base text-slate-600 mt-2 leading-relaxed">
               How I deliver single-point executive accountability while giving you the full-stack firepower of a
-              specialized squad.
+              specialized cross-functional team.
             </p>
           </div>
 
@@ -196,7 +200,7 @@ export default function HomePage() {
               </p>
               <p className="text-sm text-slate-700 leading-relaxed font-medium">
                 I operate as an embedded Player-Coach. You get my personal, dedicated focus at both the leadership
-                table and the squad level. I partner directly with your founders, executives, engineers, and designers
+                table and the cross-functional team level. I partner directly with your founders, executives, engineers, and designers
                 to answer the two most vital questions in software: <em>what to build, and why.</em>
               </p>
             </div>
@@ -250,11 +254,11 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-surface-subtle border border-surface-border rounded-2xl p-8 sm:p-12 text-center space-y-6">
           <h2 className="text-2xl sm:text-4xl font-black text-obsidian tracking-tight">
-            Stop Standing on the Riverbank of Product Indecision.
+            Stop Standing on the Riverbank. Take the Leap.
           </h2>
           <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Whether you need an embedded Fractional CPO to unblock your squad velocity, an advisory retainer to
-            stress-test your product bets, or a 2-Week Roadmap Diagnostic, let&apos;s connect.
+            Whether you need an embedded Fractional CPO to unblock your cross-functional team velocity, an advisory retainer to
+            stress-test your product bets, or a 1-Week Roadmap Diagnostic, let&apos;s connect.
           </p>
           <div className="pt-2">
             <Link

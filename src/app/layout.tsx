@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,6 +35,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://leaptherubicon.com",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -51,6 +63,105 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://leaptherubicon.com/#website",
+      url: "https://leaptherubicon.com",
+      name: "Rubicon Leap Advisory",
+      description:
+        "Strategic Product Management and Fractional CPO consulting practice led by Dave Rubini.",
+      publisher: { "@id": "https://leaptherubicon.com/#organization" },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://leaptherubicon.com/#organization",
+      name: "Rubicon Leap Advisory",
+      url: "https://leaptherubicon.com",
+      logo: "https://leaptherubicon.com/logo.svg",
+      slogan:
+        "Strategy without execution is hallucination. Execution without strategy is chaos.",
+      description:
+        "Strategic product management, Fractional CPO leadership, and 1-Week Roadmap Diagnostics led by Dave Rubini. Virtual-first and globally flexible.",
+      email: "dave@leaptherubicon.com",
+      telephone: "+1-404-386-5722",
+      areaServed: "Worldwide",
+      founder: { "@id": "https://leaptherubicon.com/#person" },
+      sameAs: [
+        "https://linkedin.com/in/daverubini/",
+        "https://daverubini.substack.com",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "Executive Inquiries",
+        email: "dave@leaptherubicon.com",
+        telephone: "+1-404-386-5722",
+        url: "https://leaptherubicon.com/contact",
+        availableLanguage: "English",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Product Leadership Services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "1-Week Roadmap Diagnostic",
+              description:
+                "Fixed-scope 5-business-day operational audit delivering an Executive Friction Map and prioritized 90-Day Outcome Roadmap.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Fractional CPO",
+              description:
+                "Embedded 1–3 days/week product leadership for scale-ups with 5–30 engineers.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Strategic Advisory Retainer",
+              description:
+                "Bi-weekly executive strategy sessions, roadmap stress-testing, board prep, and senior PM hiring rubrics.",
+            },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://leaptherubicon.com/#person",
+      name: "Dave Rubini",
+      jobTitle: "Principal & Fractional CPO",
+      worksFor: { "@id": "https://leaptherubicon.com/#organization" },
+      url: "https://leaptherubicon.com/about",
+      email: "dave@leaptherubicon.com",
+      telephone: "+1-404-386-5722",
+      sameAs: [
+        "https://linkedin.com/in/daverubini/",
+        "https://daverubini.substack.com",
+      ],
+      knowsAbout: [
+        "Strategic Product Management",
+        "Fractional CPO Leadership",
+        "User-Centered Design (UCD)",
+        "Ambient Commerce",
+        "Retail Media Monetization",
+        "Physical-Digital IoT Analytics",
+        "Hypothesis-Driven Experimentation",
+        "AI-Driven Product Discovery",
+      ],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,9 +170,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col font-sans bg-white text-obsidian antialiased selection:bg-ruby-light selection:text-ruby">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
