@@ -180,7 +180,7 @@ export default function ContactPage() {
 
                 <div className="pt-2">
                   <a
-                    href="https://calendly.com/daverubini/30min"
+                    href="https://calendly.com/leaptherubicon/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-ruby hover:bg-ruby-hover text-white text-sm font-bold rounded-lg shadow-sm transition-colors min-h-[44px]"
